@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container audio {
+width: 30vw;
+}
+
+audio::-webkit-media-controls-panel {
+  background-image: url(../img/newspaper.jpg);
+}
+
+.container span {
+  text-transform: uppercase;
+  font-family: "Droid Serif", serif;
+  color: rgb(13, 13, 13);
+}
+
+.image {
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .music{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: bold;
+    }
+    .container audio {
+      width: 100vw;
+
+      }
+
+      audio::-webkit-media-controls-panel {
+        background-image: url(../img/newspapaer-phone-version.jpg);
+      }
+      
+
+}

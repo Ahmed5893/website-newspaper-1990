@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>NewsPaper from 1990</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="newspaperHeader">
+        <div class="weatherForecast">
+          <span style="font-style: italic"
+            >Weatherforcast for the next 24 hours: cloudy all day</span
+          >
+          <br /><span>Wind: 17km/h SSE; Temperature: 11°C; Hum: 52%</span>
+        </div>
+        <header>AFTONBLADET</header>
+      </div>
+      <div class="subhead">
+        Stockholm, SE - Thursday August 30, 1990 - five Page
+      </div>
+    </div>
+    <div class="content">
+      <div class="columns">
+        <div class="column" onclick="myFunction()">
+          <h4 class="headline">Super Mario zaps all competitors</h4>
+          <figure class="figure">
+            <img class="media" src="/img/mario.gif" alt="" />
+          </figure>
+        </div>
+        <div class="column" onclick="musicFunction()">
+          <h4 class="headline">Meet The BackStreet Boys</h4>
+          <figure class="figure">
+            <img class="media" src="/img/backstreet-boys.gif" alt="" />
+          </figure>
+        </div>
+
+        <div class="column" onclick="fashionFunction()">
+          <h4 class="headline">In London,60's Return but softer</h4>
+          <figure class="figure">
+            <img class="media" src="/img/fashion.gif" alt="" />
+          </figure>
+        </div>
+        <div class="column" onclick="showFunction()">
+          <h4 class="headline">The Simpsons: The Story Begin</h4>
+          <figure class="figure">
+            <img class="media" src="/img/simpsons.gif" alt="" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        window.location.href = "../mario-page/mario.html";
+      }
+      function musicFunction() {
+        window.location.href = "/music-page/music.html";
+      }
+      function fashionFunction() {
+        window.location.href = "/fashion-page/fashion.html";
+      }
+      function showFunction() {
+        window.location.href = "/show-page/show.html";
+      }
+    </script>
+  </body>
+</html>

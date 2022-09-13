@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/newspaper.jpg);
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+
+header::before {
+  border-top: 1px solid #2f2f2f;
+  content: "";
+  width: 60%;
+  height: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+header::after {
+  border-bottom: 1px solid #2f2f2f;
+  content: "";
+  width: 60%;
+  height: 13px;
+  display: block;
+  margin: 0 auto;
+}
+
+.subhead {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
+}
+
+.content {
+  display: flex;
+}
+
+.article + .article {
+  border-left: 1px solid #2f2f2f;
+  padding-left: 10px;
+}
+
+.article {
+  margin-top: 5%;
+  width: 33.33%;
+  margin-left: 5px;
+}
+.mario-image {
+  width: 60%;
+  float: left;
+}
+
+.left-arrow {
+  width: 2.5em;
+  float: left;
+}
+.left-arrow:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.right-arrow {
+  width: 2.5em;
+  float: right;
+}
+.right-arrow:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(../img/newspapaer-phone-version.jpg);
+    padding: 0 20px;
+  }
+  header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+  }
+
+  .subhead {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+
+  .mario-image {
+    width: 30vw;
+    float: left;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .article + .article {
+    border-top: 3px solid #2f2f2f;
+    padding-top: 10px;
+    border-left: hidden;
+    padding-left: 0;
+  }
+  .article {
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+
+  .mario-image {
+    width: 13vw;
+    float: left;
+    padding-right:10px;
+  }
+
+
+}

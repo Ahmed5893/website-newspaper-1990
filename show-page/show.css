@@ -1,0 +1,20 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    }
+
+    .video{
+    width:30vw;
+    height:50vh;
+    }
+
+    @media only screen and (max-width: 600px) {
+    
+        .video{
+            width:85vw;
+            height:50vh;
+            }
+    
+    }
